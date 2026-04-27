@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "sharkmcp"
 version = "0.1.0"
-description = "MCP server that exposes tshark over a PCAP cache"
+description = "A swiss-knife MCP server for analysing PCAP files"
 requires-python = ">=3.10"
 dependencies = ["mcp>=1.0"]
 
