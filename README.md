@@ -136,7 +136,7 @@ Supported layer types for both: `tcp`, `udp`, `ip`, `ipv6`, `eth`, `sctp`, `dccp
 ## Architecture
 
 ```
-LLM
+    LLM
      │  MCP (stdio)
      ▼
  SharkMCP server
