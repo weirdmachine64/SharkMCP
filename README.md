@@ -1,6 +1,6 @@
 # SharkMCP
 
-An [MCP](https://modelcontextprotocol.io) server that exposes [sharkd](https://wiki.wireshark.org/Development/sharkd) — Wireshark's programmatic interface — as a set of tools for AI assistants. Load PCAP/PCAPNG files and analyse them with natural language.
+An [MCP](https://modelcontextprotocol.io) server that exposes [sharkd](https://wiki.wireshark.org/Development/sharkd) — Wireshark's programmatic interface — as a set of tools for LLMs. Load PCAP/PCAPNG files and analyse them with natural language.
 
 ## Requirements
 
@@ -136,7 +136,7 @@ Supported layer types for both: `tcp`, `udp`, `ip`, `ipv6`, `eth`, `sctp`, `dccp
 ## Architecture
 
 ```
-AI assistant
+LLM
      │  MCP (stdio)
      ▼
  SharkMCP server
