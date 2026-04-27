@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sharkmcp"
+version = "0.1.0"
+description = "MCP server that exposes tshark over a PCAP cache"
+requires-python = ">=3.10"
+dependencies = ["mcp>=1.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.4"]
+
+[project.scripts]
+sharkmcp = "sharkmcp.server:main"
+
+[tool.setuptools.packages.find]
+include = ["sharkmcp*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
